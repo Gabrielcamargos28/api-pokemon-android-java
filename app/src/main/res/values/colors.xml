@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#DFF2E3</color> <!-- Verde claro -->
+    <color name="button_color">#FF6347</color> <!-- Vermelho Pokémon -->
+    <color name="title_color">#4A7C59</color> <!-- Verde escuro para o título -->
+    <color name="hint_color">#A9A9A9</color> <!-- Cinza claro para dica de texto -->
+    <color name="text_color">#333333</color> <!-- Cor do texto padrão -->
+    <color name="white">#FFFFFF</color>
 </resources>

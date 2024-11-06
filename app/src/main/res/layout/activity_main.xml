@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/background_color"> <!-- Cor de fundo personalizada -->
 
     <!-- Campo de entrada para o nome do Pokémon -->
     <EditText
@@ -11,14 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite o nome do Pokémon"
-        android:inputType="text" />
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="16dp" />
 
     <!-- Botão para buscar o Pokémon -->
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buscar Pokémon" />
+        android:text="Buscar Pokémon"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_color"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- TextView para mostrar o nome do Pokémon -->
     <TextView
@@ -26,8 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nome do Pokémon"
-        android:textSize="18sp"
-        android:paddingTop="16dp" />
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:textColor="@color/title_color"
+        android:gravity="center"
+        android:textStyle="bold" />
 
     <!-- ImageView para exibir a imagem do Pokémon -->
     <ImageView
@@ -35,5 +50,8 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher_background" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/rounded_imageview" /> <!-- Fundo arredondado para imagem -->
 </LinearLayout>
